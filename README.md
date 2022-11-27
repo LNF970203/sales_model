@@ -41,8 +41,24 @@
           - But there 20 features of date-time data.
           - All the features cannot be selected since significances of the variables with dependent variables are unknown.
           - Only one variable cannot be used, it can tends to feature biasness.
+          - Cannot go with one generalized feature, for each record months, hour, minutes are totally different.
           - Therefore random feature from datetime data can be selected for every 2 weeks.
           - If the dependent variable is available, significances can be measured and can be selected or dropped based on the significance level.
+          
+  - Dealing with continuous data
+       - Lot of features are from continuous data.
+       - Mulitcollinearity which is having high correlation between independent varibales, can be an issue for sale predictions.
+       - Therefore, multicollinearity is removed by dropping columns which have high correlations.
+       - After that, as an alternative method, Principal Component analysis was done. But from 179 features, at above 100 features are needed to cover up the 80% variance.
+       ![image](https://user-images.githubusercontent.com/77132441/204117272-134236b9-b5c8-43ce-a921-0d070c29f563.png)
+
+       - Therefore, rather than going with PCA, variance ratio is considered to select the continuous variables.
+       - First required variables with highest variance is selected for the final model since higher variance are features are good for model building.
+       
+       
+ ### Notebook Link
+ 
+  - https://colab.research.google.com/drive/1j46SX1sP8jJB_pxFDPsswWoOqLkpP2Ur?usp=sharing
 
 
 
