@@ -39,7 +39,7 @@
           - Monthly and daily seasonality can occur.
           - Script mainly works with monthly seasonality(Ex: April and December sales can be more compared to other months)
           - But there are 20 features of date-time data.
-          - All the features cannot be selected since significances of the variables with dependent variables are unknown.
+          - All the features cannot be selected since significances of the variables with dependent variable are unknown.
           - Only one variable cannot be used, it can tends to feature biasness.
           - Cannot go with one generalized feature, for each record months, hour, minutes are totally different.
           - Therefore random feature from datetime data can be selected for every 2 weeks.
