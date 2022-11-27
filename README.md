@@ -53,7 +53,7 @@
        ![image](https://user-images.githubusercontent.com/77132441/204117272-134236b9-b5c8-43ce-a921-0d070c29f563.png)
 
        - Therefore, rather than going with PCA, variance ratio is considered to select the continuous variables.
-       - First required variables with highest variance is selected for the final model since higher variance are features are good for model building.
+       - First required variables with highest variance is selected for the final model since higher variance features are good for model building.
        
        
  ### Notebook Link
