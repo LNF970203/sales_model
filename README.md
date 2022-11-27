@@ -40,20 +40,25 @@
           - Script mainly works with monthly seasonality(Ex: April and December sales can be more compared to other months)
           - But there are 20 features of date-time data.
           - All the features cannot be selected since significances of the variables with dependent variable are unknown.
-          - Only one variable cannot be used, it can tends to feature biasness.
-          - Cannot go with one generalized feature, for each record months, hour, minutes are totally different.
-          - Therefore random feature from datetime data can be selected for every 2 weeks.
+          - Only one variable cannot be used, it can tend to feature biasness.
+          - Cannot go with one generalized feature, for each record, months, hour, minutes are totally different.
+          - Therefore, random feature from datetime data can be selected for every 2 weeks.
           - If the dependent variable is available, significances can be measured and can be selected or dropped based on the significance level.
           
   - Dealing with continuous data
        - Lot of features are from continuous data.
-       - Mulitcollinearity which is having high correlation between independent varibales, can be an issue for sale predictions.
+       - Mulitcollinearity which is having high correlation between independent varibales, can be an issue for sales predictions.
        - Therefore, multicollinearity is removed by dropping columns which have high correlations.
        - After that, as an alternative method, Principal Component analysis was done. But from 179 features, at above 100 features are needed to cover up the 80% variance.
        ![image](https://user-images.githubusercontent.com/77132441/204117272-134236b9-b5c8-43ce-a921-0d070c29f563.png)
 
        - Therefore, rather than going with PCA, variance ratio is considered to select the continuous variables.
        - First required variables with highest variance is selected for the final model since higher variance features are good for model building.
+
+  - Finally
+      - Categorical variable - This can change every 2 weeks time. Number of features also can be increased or decreased based on the data distribution according to the labels. Then other features are selected accordingly.
+      - Datetime variable - One random variables is selected every 2 weeks time.
+      - Continuous variable - Number of variables which will be selected depend on the number of dummy variables which is created from the categorical variable. Variables with most variance will be selected. Can change every 2 weeks time.
        
        
  ### Notebook Link
