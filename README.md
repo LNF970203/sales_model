@@ -21,7 +21,7 @@
   - Dealing with categorical variables
       - Only one type of categorical variables is identified.
 
-![Screenshot (381)](https://user-images.githubusercontent.com/77132441/204116512-2c9afe45-85ab-4354-b797-2245bbb1d918.png)
+      - ![Screenshot (381)](https://user-images.githubusercontent.com/77132441/204116512-2c9afe45-85ab-4354-b797-2245bbb1d918.png)
 
       - It has more than 200 unique features. Onehotencoding them is not appropriate.
       - Feature Engineering to extract only the continent values.
