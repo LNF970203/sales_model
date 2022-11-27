@@ -27,6 +27,22 @@
       - Feature Engineering to extract only the continent values.
       - And based on the percentage of total data, continent are categorised. If the data ratio is low, it is put to Other category. This is to mainly reduce the dimension of the data. Even with low data points, if all the continent data is used, there will be 6 more features but with this, number of features are reduced.
       - ![image](https://user-images.githubusercontent.com/77132441/204116738-d8144024-7ac6-462c-a6f1-f46f847d1e21.png)
+      - The onehotencoder is used to encode the data and first column is dropped since dummy variables are created.
+
+  - Dealing with date-time data
+      - To take decisions on date-time features, information about the features is low.
+      - Therefore user can go with datetime data or without datetime data.
+      - But assumptions can be made if moving forward with date-time data.
+          - Since we are dealing with sales prediction model, sales depends on seasonal patterns depends on the domain which the sales are being made.
+          - Therefore date-time data may have an effect here.
+          - Since it is evaluated every 2 weeks, yearly seasonality is not considerable.
+          - Monthly and daily seasonality can occur.
+          - Script mainly works with monthly seasonality(Ex: April and December sales can be more compared to other months)
+          - But there 20 features of date-time data.
+          - All the features cannot be selected since significances of the variables with dependent variables are unknown.
+          - Only one variable cannot be used, it can tends to feature biasness.
+          - Therefore random feature from datetime data can be selected for every 2 weeks.
+          - If the dependent variable is available, significances can be measured and can be selected or dropped based on the significance level.
 
 
 
