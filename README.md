@@ -50,7 +50,8 @@
        - Mulitcollinearity which is having high correlation between independent varibales, can be an issue for sales predictions.
        - Therefore, multicollinearity is removed by dropping columns which have high correlations.
        - After that, as an alternative method, Principal Component analysis was done. But from 179 features, at above 100 features are needed to cover up the 80% variance.
-       ![image](https://user-images.githubusercontent.com/77132441/204117272-134236b9-b5c8-43ce-a921-0d070c29f563.png)
+       ![image](https://user-images.githubusercontent.com/77132441/204117532-da3b58b7-9523-4b31-9f4a-f032710a61a2.png)
+
 
        - Therefore, rather than going with PCA, variance ratio is considered to select the continuous variables.
        - First required variables with highest variance is selected for the final model since higher variance features are good for model building.
@@ -59,6 +60,7 @@
       - Categorical variable - This can change every 2 weeks time. Number of features also can be increased or decreased based on the data distribution according to the labels. Then other features are selected accordingly.
       - Datetime variable - One random variables is selected every 2 weeks time.
       - Continuous variable - Number of variables which will be selected depend on the number of dummy variables which is created from the categorical variable. Variables with most variance will be selected. Can change every 2 weeks time.
+      - Process is automated by the script.
        
        
  ### Notebook Link
