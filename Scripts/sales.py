@@ -22,8 +22,6 @@ def feature_selector(path: str, correlation_threshold: float, time_data: bool) -
     """
   import pandas as pd
   from sklearn.preprocessing import OneHotEncoder
-  import seaborn as sns
-  import matplotlib.pyplot as plt
   import numpy as np
   import random
 
