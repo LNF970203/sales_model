@@ -2,7 +2,7 @@
 ### Code to select 30 features from given number of features
 
 ### Key assumptions made
-  - There can be any number of features according to the script
+  - There can be any number of features according to the script.
   - Name of these features must not be changed. These data must be collected under the same name. This is because those features are dropped by the name of the feature.
       - 'ID', 'Company_ID', 'Company_Name', 'Firstname', 'Surname', 'Address','Postcode', 'Phone'
   - For other features, feature name is not considered, any name can be chosen.
@@ -38,7 +38,7 @@
           - Since it is evaluated every 2 weeks, yearly seasonality is not considerable.
           - Monthly and daily seasonality can occur.
           - Script mainly works with monthly seasonality(Ex: April and December sales can be more compared to other months)
-          - But there 20 features of date-time data.
+          - But there are 20 features of date-time data.
           - All the features cannot be selected since significances of the variables with dependent variables are unknown.
           - Only one variable cannot be used, it can tends to feature biasness.
           - Cannot go with one generalized feature, for each record months, hour, minutes are totally different.
