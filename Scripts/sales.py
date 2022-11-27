@@ -192,7 +192,6 @@ def feature_selector(path: str, correlation_threshold: float, time_data: bool) -
   var_sorted_index = list(var_sorted.index)
   final_columns.extend(var_sorted_index[:no_features])
   print("Features selected: {}".format(var_sorted_index[:no_features]))
-  print("Features to find: {}".format(no_features))
   print("Feature selection is completed")
 
   return final_columns
