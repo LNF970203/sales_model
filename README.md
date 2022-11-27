@@ -26,7 +26,8 @@
       - It has more than 200 unique features. Onehotencoding them is not appropriate.
       - Feature Engineering to extract only the continent values.
       - And based on the percentage of total data, continent are categorised. If the data ratio is low, it is put to Other category. This is to mainly reduce the dimension of the data. Even with low data points, if all the continent data is used, there will be 6 more features but with this, number of features are reduced.
-      - ![image](https://user-images.githubusercontent.com/77132441/204116713-c001303e-8685-48f0-885c-c043ebebce60.png)
+      - ![image](https://user-images.githubusercontent.com/77132441/204116738-d8144024-7ac6-462c-a6f1-f46f847d1e21.png)
+
 
 
 
